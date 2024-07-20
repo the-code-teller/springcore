@@ -4,7 +4,14 @@ public class Bus implements Vehicle {
 
     private DiscountService discountService;
 
+    public Bus() {
+    }
+
     public Bus(DiscountService discountService) {
+        this.discountService = discountService;
+    }
+
+    public void setDiscountService(DiscountService discountService) {
         this.discountService = discountService;
     }
 

@@ -4,10 +4,16 @@ public class Car implements Vehicle {
 
     private DiscountService discountService;
 
+    public Car() {
+    }
+
     public Car(DiscountService discountService) {
         this.discountService = discountService;
     }
 
+    public void setDiscountService(DiscountService discountService) {
+        this.discountService = discountService;
+    }
 
     @Override
     public String getMileage() {

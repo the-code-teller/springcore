@@ -5,8 +5,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="vehicle" class="com.guptarahul.Bus">
-        <constructor-arg ref="discount"/>
+    <bean id="vehicle" class="com.guptarahul.Car">
+<!--        <constructor-arg ref="discount"/>-->
+        <property name="discountService" ref="discount"/>
     </bean>
 <!--    <bean id="vehicle" class="com.guptarahul.Car"></bean>-->
 
